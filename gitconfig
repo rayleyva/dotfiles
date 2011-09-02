@@ -1,3 +1,6 @@
+[user]
+	name = Ray Leyva
+	email = me@raymleyva.com
 [alias]
     ci = commit
     co = checkout
@@ -12,12 +15,9 @@
     branch = auto
     interactive = auto
     status = auto
-[user]
-    name = Joshua Frederick
-    email = josh@jfred.net
 [core]
     editor = gvim -v
-    excludesfile = /Users/jfred/.gitignore
+    excludesfile = /Users/rayleyva/.gitignore
 [advice]
 	statusHints = false
 [diff]
