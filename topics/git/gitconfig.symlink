@@ -1,0 +1,31 @@
+[alias]
+    ci = commit
+    co = checkout
+    aa = add --all
+    st = status -sb
+    dh = diff HEAD
+    dd = diff -b -w --word-diff-regex=.
+    lg = log --graph --pretty=format:'%Cred%h%Creset : %C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative
+    type = cat-file -t
+    dump = cat-file -p
+[color]
+    diff = auto
+    branch = auto
+    interactive = auto
+    status = auto
+[user]
+    name = Joshua Frederick
+    email = josh@jfred.net
+[core]
+    editor = gvim -v
+    excludesfile = /Users/jfred/.gitignore
+[advice]
+	statusHints = false
+[diff]
+	renames = copies
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
+[merge]
+	stat = true
