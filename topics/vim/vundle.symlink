@@ -20,3 +20,7 @@ Bundle 'ShowMarks'
 Bundle 'JSON.vim'
 Bundle 'python_fold'
 
+" rml monkeying around
+Bundle 'vimwiki'
+" So gvim in my Ubuntu box doesn't throw up warnings about it being missing.
+Bundle 'Wombat'
