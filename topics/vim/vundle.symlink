@@ -19,6 +19,7 @@ Bundle 'rails.vim'
 Bundle 'ShowMarks'
 Bundle 'JSON.vim'
 Bundle 'python_fold'
+Bundle 'pyflakes.vim'
 
 " rml monkeying around
 Bundle 'vimwiki'
