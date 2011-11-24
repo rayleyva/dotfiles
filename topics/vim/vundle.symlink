@@ -25,3 +25,5 @@ Bundle 'pyflakes.vim'
 Bundle 'vimwiki'
 " So gvim in my Ubuntu box doesn't throw up warnings about it being missing.
 Bundle 'Wombat'
+" Don't judge me!
+Bundle 'vim-coffee-script'
