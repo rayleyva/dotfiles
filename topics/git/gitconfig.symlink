@@ -14,10 +14,10 @@
     interactive = auto
     status = auto
 [user]
-    name = Joshua Frederick
-    email = josh@jfred.net
+    name = Ray Leyva
+    email = me@raymleyva.com
 [core]
-    excludesfile = /Users/jfred/.gitignore
+    excludesfile = /Users/rayleyva/.gitignore
 [advice]
 	statusHints = false
 [diff]
