@@ -1,6 +1,6 @@
 set nocompatible
 
-"filetype off
+set encoding=utf-8
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -73,21 +73,12 @@ if has("gui_running")
     " removes the toolbar in macvim
     set guioptions=egt
     set guioptions-=mrT
-    set guifont="DejaVu Sans Mono":h10
-    "set guifont=Menlo:h14
-    "set guifont=Consolas\ Bold:h14
-    "set guifont=Consolas:h14
-    colorscheme wombat
+
 endif
 set background=dark
 
 " Sudo file if you must
 cmap w!! %!sudo tee > /dev/null %
-
-" Switch syntax highlighting on, when the terminal has colors
-if &t_Co > 2 || has("gui_running")
-  syntax on
-endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -107,16 +98,12 @@ else
 endif " has("autocmd")
 
 " Navigation *****************************************************************
-" map <Leader>p <C-^>
+map <Leader>p <C-^>
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-" resize split windows
-map - <C-W>-
-map + <C-W>+
-
 
 " NERDCommenter
 " let NERDCreateDefaultMappings=0
@@ -175,9 +162,25 @@ if filereadable($VIRTUAL_ENV . '/bin/activate_this.py')
     python execfile(activate_this, dict(__file__=activate_this))
 endif
 
-if has("gui_running") 
-    highlight SpellBad term=underline gui=undercurl guisp=Orange 
-endif 
+" Pyflakes uses quickfix - sometimes it's nice to have other things use 
+" quick fix
+let g:pyflakes_use_quickfix = 1
+function! TogglePyflakes()
+    if g:pyflakes_use_quickfix == 0
+        let g:pyflakes_use_quickfix = 1
+    else
+        let g:pyflakes_use_quickfix = 0
+    endif
+    PyflakesUpdate
+endfunction
+map <silent> <F6> :call TogglePyflakes()<CR>
+
+" PEP8
+let g:pep8_map='<leader>8'
+
+" preview rst
+command Rst :silent !rst2html.py % > /tmp/rstprev.html && open /tmp/rstprev.html
+map <C-P><C-r> :Rst<CR>
 
 " ruby
 au FileType ruby setl sw=2 sts=2 et
@@ -216,4 +219,3 @@ hi link EasyMotionTarget ErrorMsg
 if filereadable(expand("~/.vimrc_local"))
   source ~/.vimrc_local
 endif
-

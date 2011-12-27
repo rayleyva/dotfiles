@@ -4,6 +4,11 @@
 
 Still need to setup a single bootstrap function.
 
+## Issues
+
+On OS X, jslint will try to use the system jsc which fails. Set `JS_CMD` to
+an alternate js command (etc. node) in the install specific `~/.localrc`
+
 ## Key-mappings
 
 `,` is `<Leader>`
@@ -57,3 +62,9 @@ Still need to setup a single bootstrap function.
 `F8` - Show Tag List
 
 `F9` - Retag current directory (using ctags)
+
+##### Python
+
+`F6` - Toggle Pyflakes use of quickfix windows
+
+`,8` - Run pep8 against current file (requires pep8 - pip install pep8)
