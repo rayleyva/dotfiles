@@ -139,7 +139,7 @@ map <silent> <C-N> :set invhlsearch<CR>
 let g:fuf_autoPreview = 0
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|pyc|sw[po])$|(^|[/\\])(\.(hg|git|bzr|egg-info)|build|dist)($|[/\\])'
 
-map <Leader>t :FufTag<CR>
+" map <Leader>t :FufTag<CR>
 map <Leader>f :FufFile<CR>
 map <Leader>F :FufTaggedFile<CR>
 map <Leader>b :FufBuffer<CR>
@@ -150,7 +150,8 @@ nmap <Leader>N :set invnumber<CR>
 " tags ***********************************************************************
 set tags=tags,.tags,/
 
-execute "map <F9> :!".ctags_cmd." -f '.tags' --exclude='build' --extra=+f -R .<CR>"
+execute "map <F9> :!".ctags_cmd." -f '.tags' .<CR>"
+" --exclude='build' --extra=+f -R .<CR>"
 execute "let Tlist_Ctags_Cmd='".ctags_cmd."'"
 
 nnoremap <silent> <F8> :Tlist<CR>

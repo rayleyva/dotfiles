@@ -27,3 +27,5 @@ Bundle 'vimwiki'
 Bundle 'Wombat'
 " Don't judge me!
 Bundle 'vim-coffee-script'
+" Oh yeah ... fun fun fun
+Bundle "Command-T"
