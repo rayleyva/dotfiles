@@ -17,6 +17,7 @@
     name = Ray Leyva
     email = me@raymleyva.com
 [core]
+    editor = subl -w # gvim -v
     excludesfile = /Users/rayleyva/.gitignore
 [advice]
 	statusHints = false
