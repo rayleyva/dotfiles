@@ -1,7 +1,8 @@
 # load config and system specific
 [[ -f ~/.localrc ]] && source ~/.localrc
 
-for config_file ($DOTFILES/**/*.zsh) source $config_file
+# Check that DOTFILES are defined.  Else this will do a LOOOONG search.
+[[ -d "${DOTFILES}" ]] && for config_file ($DOTFILES/**/*.zsh) source $config_file
 
 autoload -U compinit
 compinit
