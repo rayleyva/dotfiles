@@ -1,0 +1,24 @@
+export DOTFILES=~/wd/dotfiles
+
+export WORKON_HOME=~/pe
+. /usr/local/bin/virtualenvwrapper.sh
+
+export EDITOR='subl -w'
+
+alias cdl="cd ~/wd/evite/localdev"
+alias cds="cd ~/wd/evite/services"
+alias cdb="cd ~/wd/evite/bundles"
+alias cdr="cd ~/wd/evite/razor"
+alias cdn="cd ~/wd/evite/nudge"
+alias cde="cd ~/wd/evite/eos"
+
+export PATH=/Volumes/fad/wd/go/bin:$PATH
+
+export GOPATH=/Volumes/fad/wd/go
+export GOROOT=/Volumes/fad/wd/go
+export GOARCH=amd64
+export GOOS=darwin
+
+export ANDROID_SDK=/usr/local/Cellar/android-sdk/r16
+export CLOJURE_JAR=/usr/local/Cellar/clojure/1.3.0/clojure-1.3.0.jar
+export JLINE_JAR=/usr/local/lib/jline-1.0/jline-1.0.jar
