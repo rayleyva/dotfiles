@@ -15,9 +15,9 @@
     status = auto
 [user]
     name = Ray Leyva
-    email = me@raymleyva.com
+    email = ray.leyva@gmail.com
 [core]
-    editor = subl -w # gvim -v
+    editor = gvim -v
     excludesfile = /Users/rayleyva/.gitignore
 [advice]
 	statusHints = false

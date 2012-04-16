@@ -5,7 +5,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mileszs/ack.vim'
 Bundle 'nvie/vim-togglemouse'
-Bundle 'robgleeson/hammer.vim'
+" Bundle 'robgleeson/hammer.vim'
+Bundle 'matthias-guenther/hammer.vim'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
@@ -25,9 +26,15 @@ Bundle 'jslint.vim'
 
 " rml monkeying around
 Bundle 'vimwiki'
+
 " So gvim in my Ubuntu box doesn't throw up warnings about it being missing.
 Bundle 'Wombat'
+
 " Don't judge me!
 Bundle 'vim-coffee-script'
+
 " Oh yeah ... fun fun fun
 Bundle "Command-T"
+
+" Go Lang from the might jfred!
+Bundle 'jfred/vim-golang'
