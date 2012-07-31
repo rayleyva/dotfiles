@@ -6,3 +6,7 @@ if [ -f /opt/local/etc/bash_completion ]; then
 fi
 
 export PATH=/opt/local/bin:/opt/local/sbin:$HOME/bin:$PATH:/usr/local/bin:/Library/MySQL/bin
+
+export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

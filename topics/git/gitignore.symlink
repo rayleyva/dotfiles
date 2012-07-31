@@ -3,4 +3,6 @@
 .DS_Store
 .tags
 .pt
-
+.pydevproject
+.project
+_darcs

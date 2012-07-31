@@ -18,6 +18,9 @@
     email = ray.leyva@gmail.com
 [core]
     editor = gvim -v
+	name = Ray Leyva
+    email = me@raymleyva.com
+[core]
     excludesfile = /Users/rayleyva/.gitignore
 [advice]
 	statusHints = false
@@ -29,3 +32,9 @@
 	default = tracking
 [merge]
 	stat = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

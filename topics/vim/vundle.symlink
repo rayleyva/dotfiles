@@ -1,18 +1,18 @@
 Bundle 'gmarik/vundle'
 
-" original repos on github
+" original repos on github"
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'mileszs/ack.vim'
 Bundle 'nvie/vim-togglemouse'
-" Bundle 'robgleeson/hammer.vim'
+" Bundle 'robgleeson/hammer.vim'"
 Bundle 'matthias-guenther/hammer.vim'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 
-" vim-scripts repos
+" vim-scripts repos"
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'taglist.vim'
@@ -23,18 +23,20 @@ Bundle 'python_fold'
 Bundle 'pyflakes.vim'
 Bundle 'pep8'
 Bundle 'jslint.vim'
+" javascript"
+" Bundle 'jslint.vim'"
 
-" rml monkeying around
+" rml monkeying around"
 Bundle 'vimwiki'
 
-" So gvim in my Ubuntu box doesn't throw up warnings about it being missing.
+" So gvim in my Ubuntu box doesn't throw up warnings about it being missing."
 Bundle 'Wombat'
 
-" Don't judge me!
+" Don't judge me!"
 Bundle 'vim-coffee-script'
 
-" Oh yeah ... fun fun fun
+" Oh yeah ... fun fun fun"
 Bundle "Command-T"
 
-" Go Lang from the might jfred!
+" Go Lang from the might jfred!"
 Bundle 'jfred/vim-golang'
