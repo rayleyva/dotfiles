@@ -1,5 +1,5 @@
-# Re-assigning C-b to C-\
-set-option -g prefix C-\
+# set-option [-agsuw] [-t target-session|target-window] option [value]
+set -g prefix 'C-\'
 unbind C-b
 bind 'C-\' send-prefix
 
@@ -9,9 +9,6 @@ bind 'C-\' send-prefix
 # mouse
 setw -g mode-mouse on
 set-option -g mouse-select-pane on
-
-# Bindings for C-a a 
-# bind-key a send-prefix
 
 # copy and paste
 setw -g mode-keys vi
@@ -58,9 +55,6 @@ setw -g xterm-keys on
 # unbind %
 bind | split-window -h
 bind - split-window -v
-
-# Reload
-bind-key r source-file ~/.tmux.conf
 
 # Relax!
 set -sg escape-time 0
