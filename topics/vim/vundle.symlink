@@ -1,9 +1,11 @@
 Bundle 'gmarik/vundle'
 
 " original repos on github"
+" fundemental"
+Bundle 'L9'
+
+" movement "
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'mileszs/ack.vim'
 Bundle 'nvie/vim-togglemouse'
 " Bundle 'robgleeson/hammer.vim'"
 Bundle 'matthias-guenther/hammer.vim'
@@ -12,19 +14,34 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 
-" vim-scripts repos"
-Bundle 'L9'
+" Look and feel"
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'wombat256.vim'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'Lokaltog/vim-powerline'
+
+" Tmux"
+Bundle "benmills/vimux"
+
+" Finding"
+Bundle 'scrooloose/nerdtree'
+Bundle 'mileszs/ack.vim'
 Bundle 'FuzzyFinder'
-Bundle 'taglist.vim'
-Bundle 'rails.vim'
 Bundle 'ShowMarks'
+
+" general code"
+Bundle 'colorizer'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'int3/vim-extradite'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'matthias-guenther/hammer.vim'
 Bundle 'JSON.vim'
-Bundle 'python_fold'
-Bundle 'pyflakes.vim'
-Bundle 'pep8'
-Bundle 'jslint.vim'
+Bundle 'msanders/snipmate.vim'
+
 " javascript"
-" Bundle 'jslint.vim'"
+Bundle 'jslint.vim'
 
 " rml monkeying around"
 Bundle 'vimwiki'
@@ -38,5 +55,12 @@ Bundle 'vim-coffee-script'
 " Oh yeah ... fun fun fun"
 Bundle "Command-T"
 
-" Go Lang from the might jfred!"
+" python"
+Bundle 'nvie/vim-flake8'
+Bundle 'klen/rope-vim'
+
+" rails"
+Bundle 'rails.vim'
+
+" Go Lang from the mighty jfred!"
 Bundle 'jfred/vim-golang'
